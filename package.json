@@ -1,0 +1,31 @@
+{
+  "name": "learnyoubash",
+  "version": "0.0.0",
+  "description": "Learn you how to write your first bash script",
+  "main": "index.es5.js",
+  "scripts": {
+    "postpublish": "git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denysdovhan/learnyoubash.git"
+  },
+  "keywords": [
+    "nodeschool",
+    "bash"
+  ],
+  "author": "Denys Dovhan <email@denysdovhan.com> (http://denysdovhan.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denysdovhan/learnyoubash/issues"
+  },
+  "homepage": "https://github.com/denysdovhan/learnyoubash#readme",
+  "dependencies": {
+    "workshopper-adventure": "^4.4.3"
+  },
+  "bin": {
+    "learnyoubash": "./bin/learnyoubash"
+  },
+  "main": "./learnyoubash.js",
+  "preferGlobal": true
+}
