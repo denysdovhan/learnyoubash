@@ -2,8 +2,7 @@ const workshopper = require('workshopper-adventure');
 const path        = require('path');
 
 learnyoubash = workshopper({
-    name        : 'learnyoubash'
-  , title       : 'Learn Bash'
+    title       : 'Learn Bash'
   , subtitle    : 'Bash is awesome!'
   , appDir      : __dirname
   , languages   : ['en']
