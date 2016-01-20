@@ -6,7 +6,6 @@ learnyoubash = workshopper({
   , subtitle    : 'Bash is awesome!'
   , appDir      : __dirname
   , languages   : ['en']
-  , exerciseDir : path.join(__dirname, "exercises")
   , header      : require('workshopper-adventure/default/header')
   , footer      : require('workshopper-adventure/default/footer')
 });
