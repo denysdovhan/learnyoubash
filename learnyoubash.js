@@ -8,7 +8,6 @@ learnyoubash = workshopper({
   , appDir      : __dirname
   , languages   : ['en']
   , exerciseDir : path.join(__dirname, "exercises")
-  , defaultLang : 'en'
   , header      : require('workshopper-adventure/default/header')
   , footer      : require('workshopper-adventure/default/footer')
 });
