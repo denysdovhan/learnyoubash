@@ -1,5 +1,4 @@
 const workshopper = require('workshopper-adventure');
-const path        = require('path');
 
 learnyoubash = workshopper({
     title       : 'Learn Bash'
