@@ -1,30 +1,62 @@
-// const filecheck = require('workshopper-exercise/filecheck');
-// const execute = require('workshopper-exercise/execute');
-// const comparestdout = require('workshopper-exercise/comparestdout');
-
-
-// checks that the submission file actually exists
-// exercise = filecheck(exercise)
-
-// execute the solution and submission in parallel with spawn()
-// exercise = execute(exercise)
-
-// compare stdout of solution and submission
-// exercise = comparestdout(exercise)
-
 const path = require('path')
+const spawn = require('child_process').spawn;
 
 module.exports = {
-  // Done automatically by workshopper-exercise:
-  // https://github.com/workshopper/workshopper-exercise/blob/7d45a93451af944b1653943e6f6af28ddd0a676a/exercise.js#L195
-  problem: {file: path.join(__dirname, 'problem.{lang}.md')},
 
-  // Signuature has to follow
-  // https://github.com/workshopper/workshopper-adventure/blob/1c49e02aef950f62a5c72eb48bd451c2f5076219/index.js#L316
-  verify: function (args) {
-    console.log('verify', args)
+  init: function (workshopper) {
+    const lang = workshopper.i18n.lang() !== 'en'
+               ? '.' + workshopper.i18n.lang()
+               : '';
+    this.problem = { file: path.join(__dirname, `problem${lang}.md`) };
   },
+
+  verify: function (args, done) {
+    const file = args[0];
+    const test = spawn(path.join(process.cwd(), file));
+
+    const expected = `Hello, world!`
+
+    test.stdout.on('data', (data) => {
+      const actual = data.toString().trim();
+      if (actual === expected) {
+        done(true);
+      } else {
+        console.log(`Your script should return: ${expected}`);
+        console.log(`Instead of: ${actual}`);
+        done(false);
+      }
+    });
+
+    test.stderr.on('data', (data) => {
+      console.log(data.toString());
+      done(false);
+    });
+
+    test.on('close', (code) => {
+      if (code != 0) {
+        console.log(`Your script returns non-zero code: ${code}`);
+        done(false);
+      }
+    });
+
+    test.on('error', (err) => {
+      console.log(`Failed to run '${args}'!`);
+      console.log(`ERROR: ${err}`);
+      done(false);
+    });
+  },
+
   run: function (args) {
-    console.log(args)
+    const file = args[0];
+    const test = spawn(file);
+
+    test.stdout.on('data', (data) => { console.log(data.toString()) });
+    test.stderr.on('data', (data) => { console.log(data.toString()) });
+
+    test.on('error', (err) => {
+      console.log(`Failed to run '${args}'!`);
+      console.log(`ERROR: ${err}`);
+      done(false);
+    });
   }
 }
