@@ -1,5 +1,5 @@
 const path = require('path');
-const spawn = require('child_process').spawn;
+const execute = require('./execute');
 
 "use strict";
 
@@ -10,45 +10,22 @@ module.exports = dirname => ({
   },
 
   verify: function (args, done) {
-    const file = args[0];
-    args = args.slice(1);
-
-    const test = spawn(path.join(process.cwd(), file));
-
-    test.stdout.on('data', (data) => {
-      console.log(`data: ${data}`);
-    });
-
-    test.stderr.on('data', (data) => {
-      console.log(data.toString());
-      done(false);
-    });
-
-    test.on('close', (code) => {
-      if (code != 0) {
-        console.log(`Your script returns non-zero code: ${code}`);
-        done(false);
+    execute(args, (err, stdio, stdout, stderr, code) => {
+      if (err) { return done(err, false); }
+      if (stderr.toString() !== '') {
+        console.error(`Bash Syntax Error:`);
+        console.error(stderr.toString());
+        return done(false);
       }
-    });
-
-    test.on('error', (err) => {
-      console.log(`Failed to run '${args}'!`);
-      console.log(`ERROR: ${err}`);
-      done(false);
+      console.log(stdio.toString());
+      done(true);
     });
   },
 
   run: function (args) {
-    const file = args[0];
-    const test = spawn(file);
-
-    test.stdout.on('data', (data) => { console.log(data.toString()) });
-    test.stderr.on('data', (data) => { console.log(data.toString()) });
-
-    test.on('error', (err) => {
-      console.log(`Failed to run '${args}'!`);
-      console.log(`ERROR: ${err}`);
-      done(false);
+    execute(args, (err, stdio, stdout, stderr, code) => {
+      if (err) { throw err; }
+      console.log(stdio.toString());
     });
   }
 });

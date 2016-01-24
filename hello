@@ -1,0 +1,6 @@
+echo "Hello, world!"
+sleep 1
+eho "After 2 sec"
+sleep 1
+echo "Exit code 2"
+exit 2
