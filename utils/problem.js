@@ -22,10 +22,13 @@ module.exports = dirname => ({
     });
   },
 
-  run: function (args) {
+  run: function (args, done) {
     execute(args, (err, stdio, stdout, stderr, code) => {
-      if (err) { throw err; }
+      if (err) {
+        done(err, false);
+      }
       console.log(stdio.toString());
+      done()
     });
   }
 });
