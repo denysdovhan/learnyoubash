@@ -2,7 +2,7 @@
   "name": "learnyoubash",
   "version": "0.0.0",
   "description": "Learn you how to write your first bash script",
-  "main": "index.es5.js",
+  "main": "./learnyoubash.js",
   "scripts": {
     "postpublish": "git push --follow-tags"
   },
@@ -26,6 +26,5 @@
   "bin": {
     "learnyoubash": "./bin/learnyoubash"
   },
-  "main": "./learnyoubash.js",
   "preferGlobal": true
 }
