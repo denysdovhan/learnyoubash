@@ -10,7 +10,7 @@ module.exports = dirname => ({
   },
 
   verify: function (args, done) {
-    execute(args, (err, stdio, stdout, stderr, code) => {
+    execute(args, true, (err, stdio, stdout, stderr, code) => {
       if (err) { return done(err, false); }
       if (stderr.toString() !== '') {
         console.error(`Bash Syntax Error:`);
@@ -23,7 +23,7 @@ module.exports = dirname => ({
   },
 
   run: function (args, done) {
-    execute(args, (err, stdio, stdout, stderr, code) => {
+    execute(args, true, (err, stdio, stdout, stderr, code) => {
       if (err) {
         done(err, false);
       }
