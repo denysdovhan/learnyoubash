@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/denysdovhan/learnyoubash#readme",
   "dependencies": {
+    "colors": "^1.1.2",
+    "diff": "^2.2.1",
     "workshopper-adventure": "^4.4.3"
   },
   "bin": {
