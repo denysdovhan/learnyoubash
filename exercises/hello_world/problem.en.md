@@ -60,3 +60,5 @@ Create a file named `hello.bash` (prefer to use `touch`).
 That file should contain a command which output:
 
     Hello, world!
+
+---
