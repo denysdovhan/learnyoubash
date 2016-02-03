@@ -8,7 +8,8 @@ learnyoubash = workshopper({
 });
 
 learnyoubash.addAll([
-  "HELLO WORLD"
+  "HELLO WORLD",
+  "VARIABLES"
 ]);
 
 module.exports = learnyoubash;
