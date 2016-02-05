@@ -12,7 +12,8 @@ learnyoubash.addAll([
   "VARIABLES",
   "POSITIONAL PARAMETERS",
   "ARRAYS",
-  "SHELL EXPANSIONS"
+  "SHELL EXPANSIONS",
+  "STREAMS PIPES AND LISTS"
 ]);
 
 module.exports = learnyoubash;
