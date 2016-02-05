@@ -4,7 +4,7 @@ An array in bash is a variable that allows you to refer to multiple values. In b
 
 When dealing with arrays, we should be aware of the special environment variable `IFS`. **IFS** or **Input Field Separator** — is the character that separates elements in an array. The default value is an empty space `IFS=' '`.
 
-## Array declaration
+### Array declaration
 
 In bash you create an array by simply assigning a value to an index in the array variable:
 
@@ -21,7 +21,7 @@ Array variables can also be created using compound assignments such as:
 fruits=(Apple Pear Plum)
 ```
 
-## Array slice
+### Array slice
 
 Besides, we can extract a slice of array using the _slice_ operators:
 
@@ -32,7 +32,7 @@ echo ${@:1:2} # slice of positional parameters
 
 In the example above, `fruits[*]` returns the entire contents of the array, and `:0:2` extracts the slice of length 2, that starts at index 0.
 
-## Adding elements into an array
+### Adding elements into an array
 
 Adding elements into an array is quite simple too. Compound assignments are specially useful in this case. We can use them like this:
 
@@ -43,7 +43,7 @@ echo ${fruits[*]} # Orange Apple Pear Plum Banana Cherry
 
 The example above, `fruits[*]` the entire contents of the array and substitutes it into the compound assignment, then assigns the new value into the `fruits` array mutating its original value.
 
-## Deleting elements from an array
+### Deleting elements from an array
 
 To delete an element from an array, use the `unset` command:
 
