@@ -11,7 +11,8 @@ learnyoubash.addAll([
   "HELLO WORLD",
   "VARIABLES",
   "POSITIONAL PARAMETERS",
-  "ARRAYS"
+  "ARRAYS",
+  "SHELL EXPANSIONS"
 ]);
 
 module.exports = learnyoubash;
