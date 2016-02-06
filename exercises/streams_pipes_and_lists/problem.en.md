@@ -93,15 +93,15 @@ The return code of _AND_ and _OR_ lists the exit status of the last executed com
 
 Create a file named `lists.bash`.
 
-Using lists of commands (`&`, `&&`, `||` or `;`) output `First parameter is false.` if the first positional parameter is `false`, `Second parameter is true.` it second parameter is `true`. If third parameter is `true` output `Third parameter is true.` and `Third parameter is false.` if it is `false`.
+Using lists of commands (`&`, `&&`, `||` or `;`) output `First parameter is false.` if the first positional parameter is `false`, path to current directory if second parameter is `true`. If third parameter is `true` output the list of files in current directory or `Third parameter is false.` if it is `false`.
 
 For example:
 
-    ./lists.bash true true true
+    ./lists.bash true true false
 
 Output:
 
-    Second parameter is true.
-    Third parameter is true.
+    ~/Projects/bash-exercices.
+    Third parameter is false.
 
 ---
