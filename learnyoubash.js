@@ -13,7 +13,8 @@ learnyoubash.addAll([
   "POSITIONAL PARAMETERS",
   "ARRAYS",
   "SHELL EXPANSIONS",
-  "STREAMS PIPES AND LISTS"
+  "STREAMS PIPES AND LISTS",
+  "IF CONDITIONAL STATEMENT"
 ]);
 
 module.exports = learnyoubash;
