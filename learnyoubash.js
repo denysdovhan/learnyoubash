@@ -15,7 +15,8 @@ learnyoubash.addAll([
   "SHELL EXPANSIONS",
   "STREAMS PIPES AND LISTS",
   "IF CONDITIONAL STATEMENT",
-  "CASE CONDITIONAL STATEMENT"
+  "CASE CONDITIONAL STATEMENT",
+  "LOOPS"
 ]);
 
 module.exports = learnyoubash;
