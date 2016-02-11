@@ -16,7 +16,8 @@ learnyoubash.addAll([
   "STREAMS PIPES AND LISTS",
   "IF CONDITIONAL STATEMENT",
   "CASE CONDITIONAL STATEMENT",
-  "LOOPS"
+  "LOOPS",
+  "FUNCTIONS"
 ]);
 
 module.exports = learnyoubash;
