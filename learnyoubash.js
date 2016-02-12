@@ -17,7 +17,8 @@ learnyoubash.addAll([
   "IF CONDITIONAL STATEMENT",
   "CASE CONDITIONAL STATEMENT",
   "LOOPS",
-  "FUNCTIONS"
+  "FUNCTIONS",
+  "DEBUGGING"
 ]);
 
 module.exports = learnyoubash;
