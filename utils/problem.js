@@ -22,21 +22,14 @@ module.exports = (dirname, getArgs) => ({
     // Execute attempt
     execute(args, false, (err, stdio, stdout, stderr, code) => {
       if (err) { return done(err, false); }
-      if (stderr.toString() !== '') {
-        process.stdout.write(`Bash Syntax Error:`);
-        process.stdout.write(stderr.toString());
-        return done(false);
-      }
 
       // Execute solution
       args[0] = this.solutionPath;
       execute(args, false, (_err, _stdio, _stdout, _stderr, _code) => {
         if (_err) { return done(_err, false); }
-        if (stdout.toString() !== _stdout.toString()) {
+        if (stdio.toString() !== _stdio.toString()) {
           process.stdout.write('\nDiff:\n');
-          process.stdout.write(
-            diff(stdout.toString(), _stdout.toString())
-          );
+          process.stdout.write( diff(stdio.toString(), _stdio.toString()) );
           return done(false);
         }
         done(true);
