@@ -1,9 +1,9 @@
 require('colors');
 const diff = require('diff');
 
-module.exports = function (solution, attempt) {
+module.exports = function (attempt, solution) {
   // Compare solution and attempt results
-  const parts = diff.diffChars(solution, attempt);
+  const parts = diff.diffLines(attempt, solution);
   // return diff
   return parts.map( part =>
     part.added   ? part.value['red'] :
