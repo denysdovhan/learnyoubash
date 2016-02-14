@@ -1,0 +1,4 @@
+- To print these instructions again, run: `{appname} print`
+- To execute your program, run: `{appname} run program.bash`
+- To verify your program, run: `{appname} verify program.bash`
+- For help run: `{appname} help`
