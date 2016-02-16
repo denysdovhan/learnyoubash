@@ -20,6 +20,9 @@
     "url": "https://github.com/denysdovhan/learnyoubash/issues"
   },
   "homepage": "https://github.com/denysdovhan/learnyoubash#readme",
+  "engines" : {
+    "node" : ">=4.0.0"
+  },
   "dependencies": {
     "colors": "^1.1.2",
     "diff": "^2.2.1",
