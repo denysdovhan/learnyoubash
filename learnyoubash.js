@@ -11,7 +11,14 @@ learnyoubash.addAll([
   "HELLO WORLD",
   "VARIABLES",
   "POSITIONAL PARAMETERS",
-  "ARRAYS"
+  "ARRAYS",
+  "SHELL EXPANSIONS",
+  "STREAMS PIPES AND LISTS",
+  "IF CONDITIONAL STATEMENT",
+  "CASE CONDITIONAL STATEMENT",
+  "LOOPS",
+  "FUNCTIONS",
+  "DEBUGGING"
 ]);
 
 module.exports = learnyoubash;
