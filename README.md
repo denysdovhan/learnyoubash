@@ -1,12 +1,14 @@
+![learnyoubash](./preview.png)
+
 # learnyoubash
 
 [![NPM version][npm-image]][npm-url]
 [![node][node-image]][node-url]
 [![Dependency Status][depstat-image]][depstat-url]
 
-> Learn you how to write your the first Bash script.
+> Learn you how to use the terminal and write your the first Bash script.
 
-![learnyoubash](./preview.png)
+This workshopper is based on **bash-handbook**, so if you want to more examples, [check it out](https://git.io/bash-handbook).
 
 ## Requirements
 
