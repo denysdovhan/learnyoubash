@@ -1,0 +1,4 @@
+- Щоб показати ці інструкції знову, виконайте: `{appname} print`
+- Для запуску програму виконайте: `{appname} run program.bash`
+- Для верифікації виконайте: `{appname} verify program.bash`
+- Для запуску довідки: `{appname} help`
