@@ -42,6 +42,6 @@ The output must looks like this bellow:
     3: three
     5: five
 
-Do not pass any argument to your solution, when you try to verify or run your script using `learnyoubash`. We will pass arguments automatically.
+Do not pass any argument to your solution, when you try to verify or run your script using `learnyoubash`! We will pass arguments automatically.
 
 ---
