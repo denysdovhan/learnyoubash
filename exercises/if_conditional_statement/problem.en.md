@@ -1,6 +1,6 @@
 Like in other languages, Bash conditionals let us decide to perform an action or not.  The result is determined by evaluating an expression, which should be enclosed in `[[ ]]`.
 
-Conditional expression may contain `&&` and `||` operator, which are _AND_ and _OR_ accordingly. Beside this, there many [other handy expression](#primary-and-combining-expressions).
+Conditional expression may contain `&&` and `||` operator, which are _AND_ and _OR_ accordingly. Beside this, there many [other handy expression](https://github.com/denysdovhan/bash-handbook#primary-and-combining-expressions).
 
 Before we start, consider what is primaries.
 
