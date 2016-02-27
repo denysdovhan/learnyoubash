@@ -96,10 +96,10 @@ Example:
 
 Output:
 
-    11
-    13
-    15
-    17
+    10
+    12
+    14
+    16
 
 Use `for`, `while` or `until` loop to solve this problem.
 
