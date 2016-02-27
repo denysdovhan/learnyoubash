@@ -5,7 +5,7 @@ greater_even() {
   [[ $1 -lt $2 ]] || return
 
   indent="$3"
-  if [[ ! $(( $1 % 2 )) -eq 0 ]]; then
+  if [[ $(( $1 % 2 )) -eq 0 ]]; then
     i=0
     for (( i = 0; i < $indent; i++ )); do
       echo -n ' '
