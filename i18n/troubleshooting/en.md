@@ -6,15 +6,21 @@
 
 `Solution ===================`
 
+```
 %solution%
+```
 
 `Your Attempt ===================`
 
+```
 %attempt%
+```
 
 `Difference ===================`
 
+```
 %diff%
+```
 
 ## Additional troubleshooting:
 
