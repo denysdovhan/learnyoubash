@@ -61,7 +61,7 @@ echo "xtrace is turned off again"
 
 Create a file named `debugging.bash`.
 
-You will receive positional parameters. These positional parameters are filenames. Your script should do the following things:
+You will receive positional parameters. These positional parameters are filenames in format `file[hash]` (for example `file177`, `file352`). Your script should do the following things:
 
 1. Enable **verbose** and **noexec** options using `set`
 2. Output all received parameters using `echo`
