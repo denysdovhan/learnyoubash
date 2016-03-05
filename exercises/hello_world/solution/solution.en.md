@@ -2,7 +2,7 @@
 
 Gongratulations! You wrote your first bash script! Quite simple, isn't it?
 
-By the way, pay your attention to `whoami` command. This command prints your username. That meand you can do something like this:
+By the way, pay your attention to `whoami` command. This command prints your username. That means you can do something like this:
 
 ```bash
 #!/usr/bin/env bash
