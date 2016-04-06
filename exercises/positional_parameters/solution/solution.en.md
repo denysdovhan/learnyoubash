@@ -19,6 +19,6 @@ It will print:
 
     --test -t -a -b -c
 
-That means we can handle these flags and change the way what script will return. Exactly the same as with `--help` flag, that output an help message instead of running program.
+That means we can handle these flags and change the way what script will return. Exactly the same as with `--help` flag, that outputs a help message instead of running the program.
 
-In the next exercise we will learn what are arrays in Bash.
+In the next exercise we will learn what arrays are in Bash.
