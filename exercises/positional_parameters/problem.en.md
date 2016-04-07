@@ -1,4 +1,4 @@
-Now you already know how to define local and environment variables. But what are you gonna when you need to get parameters from the outside? For those purposes you may use positional parameters.
+Now you already know how to define local and environment variables. But what are you gonna use when you need to get parameters from the outside? For those purposes you may use positional parameters.
 
 **Positional parameters** are variables allocated when a function is evaluated and are given positionally. The following table lists positional parameter variables and other special variables and their meanings when you are inside a function.
 
@@ -36,7 +36,7 @@ For example, if you run script like so:
 
     ./parameters one two three four five six seven
 
-The output must looks like this bellow:
+The output must look like this below:
 
     1: one
     3: three
