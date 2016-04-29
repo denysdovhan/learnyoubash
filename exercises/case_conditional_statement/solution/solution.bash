@@ -8,7 +8,7 @@ case "$1" in
     echo "It is png."
   ;;
   "gif")
-    echo "It is gif!"
+    echo "It is gif."
   ;;
   *)
     echo "$1 is not an image!"
