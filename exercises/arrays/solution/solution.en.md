@@ -10,4 +10,4 @@ If you try to execute this command you will change your current directory to `~/
 
 Run `man cd` to get know more about this useful command.
 
-In the next exercise we will take a look at variables.
+In the next exercise we will take a look at shell expansions.
