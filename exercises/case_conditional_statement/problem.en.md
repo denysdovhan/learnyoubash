@@ -1,4 +1,4 @@
-If you are confronted with a couple of different possible actions to take, then using a `case` statement may more useful than nested `if` statements. For more complex conditions use `case` like below:
+If you are confronted with a couple of different possible actions to take, then using a `case` statement may be more useful than nested `if` statements. For more complex conditions use `case` like below:
 
 ```bash
 case "$FRUIT" in
