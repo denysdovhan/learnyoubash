@@ -1,6 +1,6 @@
 {
   "name": "learnyoubash",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "Learn you how to write your first bash script",
   "main": "./learnyoubash.js",
   "scripts": {
