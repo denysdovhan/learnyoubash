@@ -28,7 +28,7 @@
   "dependencies": {
     "colors": "^1.1.2",
     "diff": "^3.0.0",
-    "workshopper-adventure": "^4.7.0"
+    "workshopper-adventure": "^4.7.1"
   },
   "bin": {
     "learnyoubash": "./bin/learnyoubash"
