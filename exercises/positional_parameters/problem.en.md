@@ -34,7 +34,7 @@ Your program should output only the _first_, _third_ and _fifth_ positional para
 
 For example, if you run script like so:
 
-    ./parameters one two three four five six seven
+    ./parameters.bash one two three four five six seven
 
 The output must look like this below:
 
