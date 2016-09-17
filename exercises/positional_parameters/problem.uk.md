@@ -34,7 +34,7 @@ FOO=${FOO:-'default'}
 
 Наприклад, якщо ви запустите скрипт так:
 
-    ./parameters one two three four five six seven
+    ./parameters.bash one two three four five six seven
 
 Вивід повинен виглядати наступним чином:
 
