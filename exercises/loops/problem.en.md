@@ -42,7 +42,7 @@ done
 
 ### `while` loop
 
-The `while` loop tests a condition and loops a sequence of commands until that condition is _true_. A condition is nothing more than primary is used in `if..then` conditions. So a working example with `while` loop might look like this:
+The `while` loop tests a condition and loops a sequence of commands so long as that condition is `true`. A condition is nothing more than primary is used in `if..then` conditions. So a working example with `while` loop might look like this:
 
 ```bash
 #!/bin/bash
@@ -59,7 +59,7 @@ Just like in the case of the `for` loop, if we want to write `do` and condition 
 
 ### `until` loop
 
-The `until` loop is the exact opposite of the `while` loop. Like a `while` it checks a test condition, but it keeps looping as long as this condition is _false_:
+The `until` loop is the exact opposite of the `while` loop. Like a `while` it checks a test condition, but it keeps looping as long as this condition is `false`:
 
 ```bash
 until [[ condition ]]; do
