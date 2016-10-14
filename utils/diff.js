@@ -6,7 +6,7 @@ module.exports = function (attempt, solution) {
   const parts = diff.diffLines(attempt, solution);
   // return diff
   return parts.map( part =>
-    part.added   ? part.value['red'] :
-    part.removed ? part.value['green'] : part.value
+    part.added   ? part.value['red']['inverse'] :
+    part.removed ? part.value['green']['inverse'] : part.value
   ).join('');
 }
