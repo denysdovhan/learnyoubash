@@ -1,8 +1,8 @@
 Like in other languages, Bash conditionals let us decide to perform an action or not.  The result is determined by evaluating an expression, which should be enclosed in `[[ ]]`.
 
-Conditional expression may contain `&&` and `||` operator, which are _AND_ and _OR_ accordingly. Beside this, there many [other handy expression](https://github.com/denysdovhan/bash-handbook#primary-and-combining-expressions).
+A conditional expression may contain `&&` and `||` operator, which are _AND_ and _OR_ accordingly. Beside this, there are many [other handy expressions](https://github.com/denysdovhan/bash-handbook#primary-and-combining-expressions).
 
-Before we start, consider what is primaries.
+Before we start, lets consider what primaries are.
 
 ### Primary and combining expressions
 
@@ -49,7 +49,7 @@ Conditions may be combined using these **combining expressions:**
 | `[ EXPR1 -a EXPR2 ]` | Logical _AND_. True if `EXPR1` **a**nd `EXPR2` are true. |
 | `[ EXPR1 -o EXPR2 ]` | Logical _OR_. True if `EXPR1` **o**r `EXPR2` are true.|
 
-Sure, there is more useful primaries and you can easily find it in [Bash man pages](http://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html)
+Sure, there are more useful primaries and you can easily find it in the [Bash man pages](http://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html)
 
 ### Using an `if` statement
 
@@ -98,7 +98,7 @@ fi
 
 Create a file named `if.bash`.
 
-Using `if` statement and primaries, output `Good morning!` if the first positional parameter is less than 12. Output `Good afternoon!` if it is equal to/greater than 12 but less than 18. Otherwise, output `Good evening!` if it is equal to/greater than 18. Take care about cases when the positional argument is less than 0 and greater than 24 (print `Error!` in this cases).
+Using `if` statements and primaries, output `Good morning!` if the first positional parameter is less than 12. Output `Good afternoon!` if it is equal to/greater than 12 but less than 18. Otherwise, output `Good evening!` if it is equal to/greater than 18. Take care about cases when the positional argument is less than 0 and greater than 24 (print `Error!` in this cases).
 
 For example:
 

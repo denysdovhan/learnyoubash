@@ -15,7 +15,7 @@ done
 
 During each pass through the loop, `arg` takes on the value from `elem1` to `elemN`. Values may also be wildcards or [brace expansion](#brace-expansion).
 
-Also, we can write `for` loop in one line, but in this case there needs to be a semicolon before `do`, like below:
+Also, we can write a `for` loop in one line, but in this case there needs to be a semicolon before `do`, like below:
 
 ```bash
 for i in {1..5}; do echo $i; done
@@ -29,7 +29,7 @@ for (( i = 0; i < 10; i++ )); do
 done
 ```
 
-`for` is handy when we want to do the same operation over each file in a directory. For example, if we need to move all `.bash` files into `script` folder and then give them execute permissions, our script would look like this:
+`for` is handy when we want to do the same operation over each file in a directory. For example, if we need to move all `.bash` files into the `script` folder and then give them execute permissions, our script would look like this:
 
 ```bash
 #!/bin/bash
@@ -42,7 +42,7 @@ done
 
 ### `while` loop
 
-The `while` loop tests a condition and loops a sequence of commands so long as that condition is `true`. A condition is nothing more than primary is used in `if..then` conditions. So a working example with `while` loop might look like this:
+The `while` loop tests a condition and loops a sequence of commands so long as that condition is `true`. A condition is nothing more than a primary that is used in `if..then` conditions. So a working example with `while` loop might look like this:
 
 ```bash
 #!/bin/bash
@@ -55,7 +55,7 @@ while [[ $x -lt 10 ]]; do # value of x is less than 10
 done
 ```
 
-Just like in the case of the `for` loop, if we want to write `do` and condition in the same line, then we must use a semicolon before `do`.
+Just like in the case of the `for` loop, if we want to write `do` and a condition in the same line, then we must use a semicolon before `do`.
 
 ### `until` loop
 
@@ -71,7 +71,7 @@ done
 
 There are situations when we need to stop a loop before its normal ending or step over an iteration. In these cases, we can use the shell built-in `break` and `continue` statements. Both of these work with every kind of loop.
 
-The `break` statement is used to exit the current loop before its ending. We have already met with it.
+The `break` statement is used to exit the current loop before its ending.
 
 The `continue` statement steps over one iteration. We can use it as such:
 
@@ -101,6 +101,6 @@ Output:
     14
     16
 
-Use `for`, `while` or `until` loop to solve this problem.
+Use a `for`, `while` or `until` loop to solve this problem.
 
 ---

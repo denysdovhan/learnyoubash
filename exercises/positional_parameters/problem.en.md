@@ -24,24 +24,24 @@ Variables may also have _default_ values. We can define as such using the follow
 FOO=${FOO:-'default'}
 ```
 
-Default values may be useful when you should process the positional parameters, which could be omit.
+Default values may be useful when you should process the positional parameters, which could be omitted.
 
 ## THE CHALLENGE
 
 Create a file named `parameters.bash`.
 
-Your program should output only the _first_, _third_ and _fifth_ positional parameters, which will be passed into your script. Before each argument must be  its sequence number with colon `:`. Every parameter must be outputted on separate lines.
+Your program should output only the _first_, _third_ and _fifth_ positional parameters, which will be passed into your script. Before each argument must be its sequence number with colon `:`. Every parameter must be outputted on separate lines.
 
-For example, if you run script like so:
+For example, if you run the script like so:
 
     ./parameters.bash one two three four five six seven
 
-The output must look like this below:
+The output must look like the following:
 
     1: one
     3: three
     5: five
 
-Do not pass any argument to your solution, when you try to verify or run your script using `learnyoubash`! We will pass arguments automatically.
+Do not pass any arguments to your solution, when you try to verify or run your script using `learnyoubash`! We will pass arguments automatically.
 
 ---

@@ -45,9 +45,9 @@ local local_var="I'm a local value"
 
 Create a file named `functions.bash`.
 
-The problem is almost the same as in previous exercise. You receive two positional parameters and should output all even numbers in range between them. To do this, function with any name that will print these numbers using recursion. Also declare function `main` that will be print the value of `$FUNCNAME` and call your function.
+The problem is almost the same as in the previous exercise. You will receive two positional parameters and should output all even numbers in range between them. To do this, write a function with any name that will print these numbers using recursion. Also declare function `main` that will be print the value of `$FUNCNAME` and call your function.
 
-In other words, you should build tree of even numbers. On the top of the tree should be a name of `main` function. Other elements must be a even numbers. Each new elements of tree should have indentation that is equal to depth (one level is one spaces ` `).
+In other words, you should build tree of even numbers. On the top of the tree should be a name of the `main` function. The other elements must be even numbers. Each new elements of tree should have indentation that is equal to depth (one level is one space ` `).
 
 Example:
 

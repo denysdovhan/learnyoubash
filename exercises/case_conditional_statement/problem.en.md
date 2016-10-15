@@ -1,4 +1,4 @@
-If you are confronted with a couple of different possible actions to take, then using a `case` statement may be more useful than nested `if` statements. For more complex conditions use `case` like below:
+If you are confronted with a couple of different possible actions to take, then using a `case` statement may be more useful than nested `if` statements. For more complex conditions, use `case` like below:
 
 ```bash
 case "$FRUIT" in
@@ -23,7 +23,7 @@ Each case is an expression matching a pattern. The `|` sign is used for separati
 
 Create a file named `case.bash`.
 
-In this exercise you will create small image extensions checker. Using `case` statement, check if the first positional parameter is an `jpeg` (or `jpg`), `png`, `gif` extension. Output `It is jpeg.`, `It is png.`, `It is gif.` accordingly. Take care about cases when positional argument contains any other extension (print `[EXT] is not an image!` in this cases).
+In this exercise you will create a small image extensions checker. Using the `case` statement, check if the first positional parameter is a `jpeg` (or `jpg`), `png`, `gif` extension. Output `It is jpeg.`, `It is png.`, `It is gif.` accordingly. Take care about cases when positional argument contains any other extension (print `[EXT] is not an image!` in this cases).
 
 For example:
 
