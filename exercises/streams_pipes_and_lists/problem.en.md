@@ -1,4 +1,4 @@
-This exercise is very important, because streams, pipes and lists of commands are used everywhere. You will meet these strange `>` and `|` characters almost in any script. So let's discover the secret what it exactly is.
+This exercise is very important because streams, pipes, and lists of commands are used everywhere. You will meet these strange `>` and `|` characters almost in any script. So let's discover the secret to what they exactly are.
 
 ### Streams
 
@@ -24,7 +24,7 @@ Redirection makes it possible to control where the output of a command goes to, 
 | `<<`     | [Here documents](http://tldp.org/LDP/abs/html/here-docs.html) syntax |
 | `<<<`    | [Here strings](http://www.tldp.org/LDP/abs/html/x17837.html) |
 
-Here are few examples of using redirections:
+Here are a few examples of using redirections:
 
 ```bash
 # output of ls will be written to list.txt
@@ -93,7 +93,7 @@ The return code of _AND_ and _OR_ lists the exit status of the last executed com
 
 Create a file named `lists.bash`.
 
-Using lists of commands (`&`, `&&`, `||` or `;`) output `First parameter is false.` if the first positional parameter is `false`, path to current directory if second parameter is `true`. If third parameter is `true` output the list of files in current directory or `Third parameter is false.` if it is `false`.
+Using lists of commands (`&`, `&&`, `||` or `;`) output `First parameter is false.` if the first positional parameter is `false`, the path to the current directory if the second parameter is `true`; if third parameter is `true` output the list of files in the current directory or `Third parameter is false.` if it is `false`.
 
 For example:
 

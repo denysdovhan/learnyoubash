@@ -1,14 +1,14 @@
-Like in other languages, Bash conditionals let us decide to perform an action or not.  The result is determined by evaluating an expression, which should be enclosed in `[[ ]]`.
+Like in other languages, Bash conditionals let us decide whether to perform an action or not.  The result is determined by evaluating an expression, which should be enclosed in `[[ ]]`.
 
-Conditional expression may contain `&&` and `||` operator, which are _AND_ and _OR_ accordingly. Beside this, there many [other handy expression](https://github.com/denysdovhan/bash-handbook#primary-and-combining-expressions).
+Conditional expression may contain `&&` and `||` operators, which are _AND_ and _OR_ respectively. Beside this, there are many [other handy expressions](https://github.com/denysdovhan/bash-handbook#primary-and-combining-expressions).
 
-Before we start, consider what is primaries.
+Before we start, let's see what primaries are.
 
 ### Primary and combining expressions
 
 Expressions enclosed inside `[[ ]]` (or `[ ]` for `sh`) are called **test commands** or **primaries**. These expressions help us to indicate results of a conditional. In the tables below, we are using `[ ]`, because it works for `sh` too. Here is an answer about [the difference between double and single square brackets in bash](http://serverfault.com/a/52050).
 
-**Working with file system:**
+**Working with the file system:**
 
 | Primary       | Meaning                                                      |
 | :-----------: | :----------------------------------------------------------- |
@@ -49,12 +49,11 @@ Conditions may be combined using these **combining expressions:**
 | `[ EXPR1 -a EXPR2 ]` | Logical _AND_. True if `EXPR1` **a**nd `EXPR2` are true. |
 | `[ EXPR1 -o EXPR2 ]` | Logical _OR_. True if `EXPR1` **o**r `EXPR2` are true.|
 
-Sure, there is more useful primaries and you can easily find it in [Bash man pages](http://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html)
+Of course, there are more useful primaries and you can easily find them in the [Bash man pages](http://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html)
 
 ### Using an `if` statement
 
-`if` statements work the same as in other programming languages. If the expression within the braces is true, the code between `then` a
-nd `fi` is executed.  `fi` indicates the end of the conditionally executed code.
+`if` statements work the same as in other programming languages. If the expression within the braces is true, the code between `then` and `fi` is executed. `fi` indicates the end of the conditionally executed code.
 
 ```bash
 # Single-line
@@ -66,7 +65,7 @@ if [[ 1 -eq 1 ]]; then
 fi
 ```
 
-Likewise, we could use `if..else` statement such as:
+Likewise, we could use an `if..else` statement such as:
 
 ```bash
 # Single-line
@@ -98,7 +97,7 @@ fi
 
 Create a file named `if.bash`.
 
-Using `if` statement and primaries, output `Good morning!` if the first positional parameter is less than 12. Output `Good afternoon!` if it is equal to/greater than 12 but less than 18. Otherwise, output `Good evening!` if it is equal to/greater than 18. Take care about cases when the positional argument is less than 0 and greater than 24 (print `Error!` in this cases).
+Using `if` statements and primaries, output `Good morning!` if the first positional parameter is less than 12. Output `Good afternoon!` if it is equal to/greater than 12 but less than 18. Otherwise, output `Good evening!` if it is equal to/greater than 18. Take care about cases when the positional argument is less than 0 and greater than 24 (print `Error!` in these cases).
 
 For example:
 

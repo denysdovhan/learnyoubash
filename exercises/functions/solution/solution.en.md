@@ -1,6 +1,6 @@
 # Fine!
 
-You may use functions to create your own commands in terminal. To do that, just define functions somewhere in your `~/.bashrc` file (`~/.bash_profile`, `~/.zshrc` for Zsh, etc). For example:
+You may use functions to create your own commands in the terminal. To do that, just define functions somewhere in your `~/.bashrc` file (`~/.bash_profile`, `~/.zshrc` for Zsh, etc). For example:
 
 ```bash
 # ...
@@ -20,9 +20,9 @@ After that, update your settings using `. ~/.bashrc` and use this command as any
 
 ## Aliases
 
-By the way, sometimes you should type a long command sequence and to do something. If you often do this, you may want define an _alias_. Alias is essentially like a keyboard shortcut, a means of avoiding typing a long command sequence.
+By the way, sometimes you might type a long command sequence to do something. If you often do this, you may want to define an _alias_. An alias is essentially like a keyboard shortcut, a means to avoid typing a long command sequence.
 
-For example, if you often type a `ls -alF` command feel free to define alias in the `~/.bashrc` file:
+For example, if you often type a `ls -alF` command feel free to define an alias in the `~/.bashrc` file:
 
 ```bash
 # ...
@@ -32,6 +32,6 @@ For example, if you often type a `ls -alF` command feel free to define alias in 
 alias ll='ls -alF'
 ```
 
-Update your settings using `. ~/.bashrc` and now you can use `ll` command instead of long `ls -alF`.
+Update your settings using `. ~/.bashrc` and now you can use the `ll` command instead of the longer `ls -alF` command.
 
-Now you have a good basic knowledge in Bash. In the next exercise we will take a look at debugging of bash scripts.
+Now you have a good basic knowledge of Bash. In the next exercise we will take a look at the debugging of bash scripts.

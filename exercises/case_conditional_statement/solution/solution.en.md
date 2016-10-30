@@ -1,16 +1,16 @@
 # Cool!
 
-As you have seen, using of `case` is much more convenient when you are confronted with a couple of different cases.
+As you have seen, using `case` is much more convenient when you are confronted with a couple of different cases.
 
-In this problem you were checking extensions. But how actually we can directory or filename?
+In this problem you were checking extensions. But how do we actually access a directory or filename?
 
 We already know about `pwd` command that return full path to current directory. However there are also other similar commands, like `basename` and `dirname`.
 
-The `basename` command strips directory and suffix from filenames such as:
+The `basename` command strips the directory and suffix from filenames such as:
 
     basename path/to/file.ext  #> file
 
-The `dirname` command strips last component from file name, like this:
+The `dirname` command strips the last component from a file name, like this:
 
     dirname /path/to/file.ext  #> path/to
 

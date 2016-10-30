@@ -1,10 +1,10 @@
-_Expansions_  are mechanism to calculate arithmetical operations, to save results of command's executions and so on.
+_Expansions_  are mechanisms to calculate arithmetical operations, to save results of a command's executions, etc.
 
 If you are interested, you can read [more about shell expansions](https://www.gnu.org/software/bash/manual/bash.html#Shell-Expansions).
 
 ### Brace expansion
 
-Brace expansion allow us to generate arbitrary strings. It's similar to _filename expansion_. For example:
+Brace expansions allow us to generate arbitrary strings. It's similar to _filename expansion_. For example:
 
 ```bash
 echo beg{i,a,u}n # begin began begun

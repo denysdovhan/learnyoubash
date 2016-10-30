@@ -15,7 +15,7 @@ These options are settings that change shell behavior. The following table is a 
 | `-v` | verbose     | Print each command to `stdout` before executing it.     |
 | `-x` | xtrace      | Print each command to `stdout` before executing it and expands commands. |
 
-For example, we have script with `-x` option such as:
+For example, we have a script with `-x` option such as:
 
 ```bash
 #!/bin/bash -x
@@ -45,7 +45,7 @@ $ ./my_script
 + (( i < 3 ))
 ```
 
-Sometimes we need to debug a part of a script. In this case using the `set` is convenient. This command can enable and disable options. Options are turned on using `-` and turned off using `+`:
+Sometimes we need to debug a part of a script. In this case using the `set` command is convenient. This command can enable and disable options. Options are turned on using `-` and turned off using `+`:
 
 ```bash
 #!/bin/bash
@@ -74,7 +74,7 @@ You will receive positional parameters. These positional parameters are filename
 
 Please, write one command per line without empty lines.
 
-You must know how to move one or more files or directories from one place to another. When we need to move files we use the `mv` command. The `mv` receives two arguments: the source and destination. If both filenames are on the same filesystem, this results in a simple file rename. When a filename is moved to an existing filename, the existing file is deleted.
+You must know how to move one or more files or directories from one place to another. When we need to move files we use the `mv` command. The `mv` command receives two arguments: the source and the destination. If both filenames are on the same filesystem, this results in a simple file rename. When a filename is moved to an existing filename, the existing file is deleted.
 
 For example:
 

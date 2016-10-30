@@ -1,6 +1,6 @@
-If you already familiar with arrays in other programming languages, you won't be surprised.
+If you are already familiar with arrays in other programming languages, you won't be surprised here.
 
-An array in bash is a variable that allows you to refer to multiple values. In bash, arrays are also zero-based, this is, the first element in an array has index 0.
+An array in bash is a variable that allows you to refer to multiple values. In bash, arrays are also zero-based, that is, the first element in an array has an index of 0.
 
 When dealing with arrays, we should be aware of the special environment variable `IFS`. **IFS** or **Input Field Separator** — is the character that separates elements in an array. The default value is an empty space `IFS=' '`.
 
@@ -23,7 +23,7 @@ fruits=(Apple Pear Plum)
 
 ### Array slice
 
-Besides, we can extract a slice of array using the _slice_ operators:
+Also, we can extract a slice of an array using the _slice_ operators:
 
 ```bash
 echo ${fruits[*]:0:2} # Apple Pear
@@ -41,7 +41,7 @@ fruits=(Orange ${fruits[*]} Banana Cherry)
 echo ${fruits[*]} # Orange Apple Pear Plum Banana Cherry
 ```
 
-The example above, `fruits[*]` the entire contents of the array and substitutes it into the compound assignment, then assigns the new value into the `fruits` array mutating its original value.
+In the example above, `fruits[*]` represents the entire contents of the array and substitutes it into the compound assignment, then assigns the new value into the `fruits` array, mutating its original value.
 
 ### Deleting elements from an array
 
@@ -56,11 +56,11 @@ echo ${fruits[*]} # Apple Pear Plum Banana Cherry
 
 Create a file named `arrays.bash`.
 
-Through positional parameters into your script will be passed few values. As you already know, all parameters which were passed into script are stored in `$*` and `$@` variables. These variables are nothing else than arrays.
+A few values will be passed into your script through positional parameters. As you already know, all parameters which were passed into the script are stored in `$*` and `$@` variables. These variables are none other than arrays.
 
-You should take slice of elements from the second to third (eventually two items). Save this elements to new array. Add to the beginning of array two new items `I` and `am`. Add to the ending of the array two items: `and` and fourth positional argument.
+You should take slice of elements consisting of the second to third items (eventually two items). Save these elements into a new array. Add to the beginning of the array two new items, `I` and `am`. Add to the end of the array two items: `and` and the fourth positional argument.
 
-Output all elements of array.
+Output all elements of the array.
 
 For example, if you run your script with these arguments:
 
