@@ -1,8 +1,8 @@
 # Done!
 
-In description of problem we haven't told about `select` loop.
+In the description of the problem we haven't mentioned the `select` loop.
 
-The `select` loop helps us to organize a user menu. It has almost the same syntax as `for` loop:
+The `select` loop helps us to organize a user menu. It has almost the same syntax as a `for` loop:
 
 ```bash
 select answer in elem1 elem2 ... elemN
@@ -47,4 +47,4 @@ Enter the package name: bash-handbook
 <installing bash-handbook>
 ```
 
-In the next exercise you will take a what is functions in bash.
+In the next exercise you will take a look at what functions are in bash.

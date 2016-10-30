@@ -1,8 +1,8 @@
 # You are awesome!
 
-You've finished all exercises! That's mean you are awesome!
+You've finished all of the exercises! That means you are awesome!
 
-You learned what is Bash and how to write your the first script. But, to be honest, that doesn't mean you are completely mastered the Bash. There are a lot of other things you have to learn.
+You learned what Bash is and how to write your first script. But, to be honest, that doesn't mean that you completely mastered Bash. There are a lot of other things you still have to learn.
 
 Here's a small list of other literature covering Bash:
 

@@ -22,7 +22,7 @@ echo 'My name is $NAME' #> My name is $NAME
 
 ### Environment variables
 
-Sometimes we need to declare variables which will be accessible from outside in current shell session, for other programs, script, etc. These variables are called **environment variables**. They are created just like local variables, but using the keyword `export` instead.
+Sometimes we need to declare variables which will be accessible from outside the current shell session, for other programs, scripts, etc. These variables are called **environment variables**. They are created just like local variables, but using the keyword `export` instead.
 
 ```bash
 export GLOBAL_VAR="I am a global variable"
@@ -49,7 +49,7 @@ You may find extended list of environment variables in Bash:
 
 Create a file named `variables.bash` (of course using `touch`).
 
-Your program should output your current username and directory name in following format:
+Your program should output your current username and directory name in the following format:
 
     User <username> in directory <directory>.
 

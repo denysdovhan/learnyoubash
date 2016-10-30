@@ -4,7 +4,7 @@ There are four types of loops in Bash: `for`, `while`, `until` and `select`.
 
 ### `for` loop
 
-The `for` is very similar to its sibling in C. It looks like this:
+The `for` loop is very similar to its sibling in C. It looks like this:
 
 ```bash
 for arg in elem1 elem2 ... elemN
@@ -15,7 +15,7 @@ done
 
 During each pass through the loop, `arg` takes on the value from `elem1` to `elemN`. Values may also be wildcards or [brace expansion](#brace-expansion).
 
-Also, we can write `for` loop in one line, but in this case there needs to be a semicolon before `do`, like below:
+Also, we can write a `for` loop in one line, but in this case there needs to be a semicolon before `do`, like below:
 
 ```bash
 for i in {1..5}; do echo $i; done
@@ -29,7 +29,7 @@ for (( i = 0; i < 10; i++ )); do
 done
 ```
 
-`for` is handy when we want to do the same operation over each file in a directory. For example, if we need to move all `.bash` files into `script` folder and then give them execute permissions, our script would look like this:
+`for` is handy when we want to do the same operation over each file in a directory. For example, if we need to move all `.bash` files into the `script` folder and then give them execute permissions, our script would look like this:
 
 ```bash
 #!/bin/bash
@@ -42,7 +42,7 @@ done
 
 ### `while` loop
 
-The `while` loop tests a condition and loops a sequence of commands so long as that condition is `true`. A condition is nothing more than primary is used in `if..then` conditions. So a working example with `while` loop might look like this:
+The `while` loop tests a condition and loops a sequence of commands so long as that condition is `true`. A condition is nothing more than the primary used in `if..then` conditions. So a working example with `while` loop might look like this:
 
 ```bash
 #!/bin/bash
@@ -55,11 +55,11 @@ while [[ $x -lt 10 ]]; do # value of x is less than 10
 done
 ```
 
-Just like in the case of the `for` loop, if we want to write `do` and condition in the same line, then we must use a semicolon before `do`.
+Just like in the case of the `for` loop, if we want to write `do` and the condition in the same line, then we must use a semicolon before `do`.
 
 ### `until` loop
 
-The `until` loop is the exact opposite of the `while` loop. Like a `while` it checks a test condition, but it keeps looping as long as this condition is `false`:
+The `until` loop is the exact opposite of the `while` loop. Like a `while` loop it checks a test condition, but it keeps looping as long as this condition is `false`:
 
 ```bash
 until [[ condition ]]; do
@@ -88,7 +88,7 @@ If we run the example above, it will print all odd numbers from 0 through 9.
 
 Create a file named `loops.bash`.
 
-The first two positional parameters which will be passed into your script are the limits. You should write all even numbers in range between the first and second positional parameters.
+The first two positional parameters which will be passed into your script are the limits. You should write all even numbers in the range between the first and second positional parameters.
 
 Example:
 
@@ -101,6 +101,6 @@ Output:
     14
     16
 
-Use `for`, `while` or `until` loop to solve this problem.
+Use `for`, `while` or `until` loops to solve this problem.
 
 ---

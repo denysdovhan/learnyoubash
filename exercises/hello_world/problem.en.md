@@ -29,7 +29,7 @@ In _non-interactive mode_, the shell reads commands from a file or a pipe and ex
 
 A script is just a regular text file that consists of commands the shell interpreter can evaluate using `bash` shell's interpreter program. The commands are just regular command which you can use from interactive mode too.
 
-Create your first script using `touch` command:
+Create your first script using the `touch` command:
 
     touch hi.bash
 
@@ -57,7 +57,7 @@ Another handy thing we learned above is using the `echo` to print something to t
 
 Create a file named `hello.bash` (prefer to use `touch`).
 
-That file should contain a command which output:
+That file should contain a command which outputs:
 
     Hello, world!
 

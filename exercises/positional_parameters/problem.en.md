@@ -1,6 +1,6 @@
-Now you already know how to define local and environment variables. But what are you gonna use when you need to get parameters from the outside? For those purposes you may use positional parameters.
+Now you already know how to define local and environment variables. But what are you going to use when you need to get parameters from the outside? For those purposes you may use positional parameters.
 
-**Positional parameters** are variables allocated when a function is evaluated and are given positionally. The following table lists positional parameter variables and other special variables and their meanings when you are inside a function.
+**Positional parameters** are variables allocated when a function is evaluated and they are given positionally. The following table lists positional parameter variables and other special variables and their meanings when you are inside a function.
 
 | Parameter      | Description                                                 |
 | :------------- | :---------------------------------------------------------- |
@@ -17,22 +17,22 @@ In the example below, the positional parameters will be `$0='./script.sh'`,  `$1
 
 ### Default values
 
-Variables may also have _default_ values. We can define as such using the following syntax:
+Variables may also have _default_ values. We can define them as such using the following syntax:
 
 ```bash
 # Assign FOO value 'default' if it's empty
 FOO=${FOO:-'default'}
 ```
 
-Default values may be useful when you should process the positional parameters, which could be omit.
+Default values may be useful when you should process the positional parameters, which could be omitted.
 
 ## THE CHALLENGE
 
 Create a file named `parameters.bash`.
 
-Your program should output only the _first_, _third_ and _fifth_ positional parameters, which will be passed into your script. Before each argument must be  its sequence number with colon `:`. Every parameter must be outputted on separate lines.
+Your program should output only the _first_, _third_ and _fifth_ positional parameters, which will be passed into your script. Before each argument must be its sequence number with a colon `:`. Every parameter must be outputted on separate lines.
 
-For example, if you run script like so:
+For example, if you run the script like so:
 
     ./parameters.bash one two three four five six seven
 
@@ -42,6 +42,6 @@ The output must look like this below:
     3: three
     5: five
 
-Do not pass any argument to your solution, when you try to verify or run your script using `learnyoubash`! We will pass arguments automatically.
+Do not pass any arguments to your solution; when you try to verify or run your script using `learnyoubash`, we will pass the arguments automatically.
 
 ---

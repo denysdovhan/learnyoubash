@@ -1,8 +1,8 @@
 # Great!
 
-Streams and pipes are useful to create logs and to transfer data from one command to another. Lists of commands give you opportunity to change the result of executing of your script.
+Streams and pipes are useful to create logs and to transfer data from one command to another. Lists of commands give you the opportunity to change the result of the execution of your script.
 
-You are already familiar with `ls` command. But what if you need to list all files with specific extension in current directory?
+You are already familiar with the `ls` command. But what if you need to list all files with a specific extension in the current directory?
 
 Meet the `grep` command! The `grep` command prints lines matching a pattern. Now, using `grep` we can solve the problem like so:
 
