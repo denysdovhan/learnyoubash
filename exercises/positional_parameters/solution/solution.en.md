@@ -17,6 +17,7 @@ Run it with some flags:
 
 It will print:
 
+    Arguments:
     --test -t -a -b -c
 
 That means we can handle these flags and change what the script will return. Exactly the same as with the `--help` flag, which outputs a help message instead of running the program.
