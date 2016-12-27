@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 _Expansions_  are mechanisms to calculate arithmetical operations, to save results of a command's executions, etc.
+=======
+_Expansions_  are a mechanism to calculate arithmetical operations, to save results of command's executions and so on.
+>>>>>>> d28e3b15e7caa574b00a6032bd57b5caa08d4ebf
 
 If you are interested, you can read [more about shell expansions](https://www.gnu.org/software/bash/manual/bash.html#Shell-Expansions).
 
@@ -31,7 +35,7 @@ echo $now # 19:08:26
 
 ### Arithmetic expansion
 
-In bash we are free to do any arithmetical operations. But the expression must enclosed by `$(( ))`. The format for arithmetic expansions is:
+In bash we are free to do any arithmetic operations. But the expression must be enclosed by `$(( ))`. The format for arithmetic expansions is:
 
 ```bash
 result=$(( ((10 + 5*3) - 7) / 2 ))
@@ -42,7 +46,7 @@ echo $result # 9
 
 Create a file named `expansions.bash`.
 
-Your script should multiply the first positional parameter to the sum of the second and third parameter using arithmetic expansion. Save the result to the variable, `$RESULT` e.g.
+Your script should multiply the first positional parameter with the sum of the second and third parameter using arithmetic expansion. Save the result to the variable, `$RESULT` e.g.
 
 Then, using brace expansions, restore the following folder structure:
 

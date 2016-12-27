@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 This exercise is very important because streams, pipes, and lists of commands are used everywhere. You will meet these strange `>` and `|` characters almost in any script. So let's discover the secret to what they exactly are.
+=======
+This exercise is very important, because streams, pipes and lists of commands are used everywhere. You will meet these strange `>` and `|` characters almost in any script. So let's discover the secret of what it is exactly.
+>>>>>>> d28e3b15e7caa574b00a6032bd57b5caa08d4ebf
 
 ### Streams
 
-Bash receives input and sends output as sequences or **streams** of characters. These streams may be redirected into files or one into
-another.
+Bash receives input and sends output as sequences or **streams** of characters.  These streams may be redirected into files or vice versa.
 
 There are three descriptors:
 
