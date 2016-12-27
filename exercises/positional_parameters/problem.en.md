@@ -36,7 +36,7 @@ For example, if you run the script like so:
 
     ./parameters.bash one two three four five six seven
 
-The output must look like this below:
+The output must look like the following:
 
     1: one
     3: three

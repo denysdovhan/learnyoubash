@@ -4,7 +4,7 @@ Okay, now you know how to write Bash scripts. But it's not so easy. Sometimes we
 #!/bin/bash options
 ```
 
-These options are settings that change shell behavior. The following table is a list of options which might be useful to you:
+These options are settings that change the shell's behavior. The following table is a list of options which might be useful to you:
 
 | Flag | Name        | Description                                             |
 | :--: | :---------- | :------------------------------------------------------ |
@@ -61,12 +61,12 @@ echo "xtrace is turned off again"
 
 Create a file named `debugging.bash`.
 
-You will receive positional parameters. These positional parameters are filenames in format `file[hash]` (for example `file177`, `file352`). Your script should do the following things:
+You will receive positional parameters. These positional parameters are filenames in the format `file[hash]` (for example `file177`, `file352`). Your script should do the following things:
 
 1. Enable **verbose** and **noexec** options using `set`
 2. Output all received parameters using `echo`
 3. Create all these files
-4. Create directory with name `folder` in current directory
+4. Create a directory with name `folder` in current directory
 5. Move all files to the `folder`
 6. Change directory to the `folder`
 7. List all files inside the `folder`
