@@ -15,10 +15,12 @@ module.exports = (dirname, getArgs) => {
 
     this.problem =
       { file: path.join(dirname, `problem.${lang}.md`) };
-    this.solution =
-      { file: path.join(dirname, `solution`, `solution.${lang}.md`) };
     this.solutionPath =
       path.resolve(dirname, `solution`, `solution.bash`);
+    this.solution = [
+      { file: this.solutionPath },
+      { file: path.join(dirname, `solution`, `solution.${lang}.md`) }
+    ];
     this.troubleshooting =
       path.join(__dirname, '..', 'i18n', 'troubleshooting', `${lang}.md`)
   };
