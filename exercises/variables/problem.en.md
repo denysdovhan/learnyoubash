@@ -22,11 +22,8 @@ echo 'My name is $NAME' #> My name is $NAME
 
 ### Environment variables
 
-<<<<<<< HEAD
 Sometimes we need to declare variables which will be accessible from outside the current shell session, for other programs, scripts, etc. These variables are called **environment variables**. They are created just like local variables, but using the keyword `export` instead.
-=======
-Sometimes we need to declare variables which will be accessible from outside in the current shell session, for other programs, script, etc. These variables are called **environment variables**. They are created just like local variables, but using the keyword `export` instead.
->>>>>>> d28e3b15e7caa574b00a6032bd57b5caa08d4ebf
+
 
 ```bash
 export GLOBAL_VAR="I am a global variable"

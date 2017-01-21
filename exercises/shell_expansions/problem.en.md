@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-_Expansions_  are mechanisms to calculate arithmetical operations, to save results of a command's executions, etc.
-=======
 _Expansions_  are a mechanism to calculate arithmetical operations, to save results of command's executions and so on.
 >>>>>>> d28e3b15e7caa574b00a6032bd57b5caa08d4ebf
 

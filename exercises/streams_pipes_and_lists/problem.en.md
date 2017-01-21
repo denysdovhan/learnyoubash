@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-This exercise is very important because streams, pipes, and lists of commands are used everywhere. You will meet these strange `>` and `|` characters almost in any script. So let's discover the secret to what they exactly are.
-=======
-This exercise is very important, because streams, pipes and lists of commands are used everywhere. You will meet these strange `>` and `|` characters almost in any script. So let's discover the secret of what it is exactly.
->>>>>>> d28e3b15e7caa574b00a6032bd57b5caa08d4ebf
+
+This exercise is very important because streams, pipes, and lists of commands are used everywhere. You will meet these strange `>` and `|` characters in almost any script. So let's discover the secret to what they exactly are.
+
 
 ### Streams
 
