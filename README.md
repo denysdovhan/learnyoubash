@@ -2,6 +2,8 @@
 
 # learnyoubash
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/denysdovhan/learnyoubash.svg)](https://greenkeeper.io/)
+
 [![NPM version][npm-image]][npm-url]
 [![node][node-image]][node-url]
 [![Dependency Status][depstat-image]][depstat-url]
