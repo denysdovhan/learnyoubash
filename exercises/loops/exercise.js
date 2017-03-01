@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = require('../../utils/problem')(__dirname, () => {
 
   const random = (min, max) =>
@@ -5,6 +7,6 @@ module.exports = require('../../utils/problem')(__dirname, () => {
 
   return [
     random(0, 50),
-    random(50,100)
+    random(50,100),
   ];
 });
