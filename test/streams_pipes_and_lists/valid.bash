@@ -1,0 +1,1 @@
+./exercises/streams_pipes_and_lists/solution/solution.bash

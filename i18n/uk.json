@@ -1,4 +1,17 @@
 {
-  "title"       : "Вивчаємо Bash",
-  "subtitle"    : "Bash це неймовірно!"
+  "title" : "Вивчаємо Bash",
+  "subtitle" : "Bash це неймовірно!",
+  "exercise": {
+    "HELLO WORLD": "HELLO WORLD",
+    "VARIABLES": "ЗМІННІ",
+    "POSITIONAL PARAMETERS": "ПОЗИЦІЙНІ ПАРАМЕТРИ",
+    "ARRAYS": "МАСИВИ",
+    "SHELL EXPANSIONS": "ПІДСТАНОВКИ",
+    "STREAMS PIPES AND LISTS": "ПОТОКИ, КАНАЛИ ТА СПИСКИ",
+    "IF CONDITIONAL STATEMENT": "УМОВНИЙ ОПЕРАТОР IF",
+    "CASE CONDITIONAL STATEMENT": "УМОВНИЙ ОПЕРАТОР CASE",
+    "LOOPS": "ЦИКЛИ",
+    "FUNCTIONS": "ФУНКЦІЇ",
+    "DEBUGGING": "НАЛАГОДЖЕННЯ"
+  }
 }

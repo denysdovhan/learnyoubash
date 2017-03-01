@@ -1,0 +1,1 @@
+exercises/arrays/solution/solution.bash

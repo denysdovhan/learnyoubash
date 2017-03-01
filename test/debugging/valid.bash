@@ -1,0 +1,1 @@
+./exercises/debugging/solution/solution.bash

@@ -1,0 +1,1 @@
+./exercises/hello_world/solution/solution.bash

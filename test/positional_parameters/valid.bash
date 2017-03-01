@@ -1,0 +1,1 @@
+./exercises/positional_parameters/solution/solution.bash
