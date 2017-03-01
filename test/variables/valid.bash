@@ -1,0 +1,1 @@
+./exercises/variables/solution/solution.bash

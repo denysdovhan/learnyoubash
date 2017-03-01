@@ -1,0 +1,1 @@
+./exercises/case_conditional_statement/solution/solution.bash
