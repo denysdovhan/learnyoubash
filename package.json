@@ -8,7 +8,7 @@
     "learnyoubash": "./bin/learnyoubash"
   },
   "scripts": {
-    "test": "workshopper-adventure-test",
+    "test": "eslint . && workshopper-adventure-test",
     "postpublish": "git push --follow-tags"
   },
   "repository": {
@@ -37,6 +37,9 @@
     "workshopper-adventure": "^5.1.8"
   },
   "devDependencies": {
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0",
     "workshopper-adventure-test": "^1.0.4"
   }
 }

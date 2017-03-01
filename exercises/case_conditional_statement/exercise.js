@@ -1,7 +1,4 @@
-'use strict';
-
 module.exports = require('../../utils/problem')(__dirname, () => {
-
   const extensions = [
     'js', 'png', 'jpeg', 'jpg', 'gif', 'bmp', 'bash', 'sh', 'zsh', 'rb', 'py',
   ];

@@ -1,5 +1,3 @@
-'use strict';
-
 const path = require('path');
 const execute = require('./execute');
 const fail = require('./fail');
@@ -7,25 +5,26 @@ const fail = require('./fail');
 module.exports = (dirname, getArgs) => {
   const exports = {};
 
-  exports.init = function (workshopper) {
+  exports.init = function init(workshopper) {
     // Get lang code
     const lang = workshopper.i18n.lang();
 
     this.problem =
       { file: path.join(dirname, `problem.${lang}.md`) };
     this.solutionPath =
-      path.resolve(dirname, `solution`, `solution.bash`);
+      path.resolve(dirname, 'solution', 'solution.bash');
     this.solution = [
       { file: this.solutionPath },
-      { file: path.join(dirname, `solution`, `solution.${lang}.md`) }
+      { file: path.join(dirname, 'solution', `solution.${lang}.md`) },
     ];
     this.troubleshooting =
-      path.join(__dirname, '..', 'i18n', 'troubleshooting', `${lang}.md`)
+      path.join(__dirname, '..', 'i18n', 'troubleshooting', `${lang}.md`);
   };
 
-  exports.verify = function ([filename, args = []], done) {
+  exports.verify = function verify([filename, args = []], done) {
     // Get argumetns which will be passed into script
     if (getArgs) {
+      // eslint-disable-next-line
       args = args.concat(getArgs());
     }
 
@@ -49,14 +48,13 @@ module.exports = (dirname, getArgs) => {
         }
         return done(true);
       })
-      .catch((reason) => {
-        return done(reason, false);
-      });
+      .catch(reason => done(reason, false));
   };
 
-  exports.run = function (args, done) {
+  exports.run = function run(args, done) {
     // Get argumetns which will be passed into script
     if (getArgs) {
+      // eslint-disable-next-line
       args = args.push(getArgs());
     }
 

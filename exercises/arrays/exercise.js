@@ -1,7 +1,4 @@
-'use strict';
-
 module.exports = require('../../utils/problem')(__dirname, () => {
-
   const templates = [
     'intelligent', 'handsome', 'awesome',
     'perfect', 'clever', 'pretty', 'lovely',
@@ -11,8 +8,8 @@ module.exports = require('../../utils/problem')(__dirname, () => {
 
   const random = () => Math.ceil(Math.random() * 13);
 
-  let args = [];
-  for (let i = 0; i < 5; i++) {
+  const args = [];
+  for (let i = 0; i < 5; i += 1) {
     args.push(templates[random()]);
   }
 

@@ -1,8 +1,5 @@
-'use strict';
-
 const path = require('path');
 const format = require('./format-file');
-const diff = require('./diff');
 
 module.exports = function fail({
   filename,
@@ -19,4 +16,4 @@ module.exports = function fail({
   }, {
     file: path.join(__dirname, '..', 'i18n', 'footer', '{lang}.md'),
   }];
-}
+};
