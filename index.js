@@ -1,13 +1,15 @@
+'use strict';
+
 const workshopper = require('workshopper-adventure');
 const path = require('path');
 
-learnyoubash = workshopper({
-    appDir      : __dirname
-  , languages   : ['en','uk']
-  , header      : require('workshopper-adventure/default/header')
-  , footer      : [
-      { file: path.join(__dirname, 'i18n', 'footer', '{lang}.md') }
-  ]
+const learnyoubash = workshopper({
+  appDir: __dirname,
+  languages: ['en','uk'],
+  header: require('workshopper-adventure/default/header'),
+  footer: [{
+    file: path.join(__dirname, 'i18n', 'footer', '{lang}.md'),
+  }],
 });
 
 learnyoubash.addAll([
@@ -21,7 +23,7 @@ learnyoubash.addAll([
   "CASE CONDITIONAL STATEMENT",
   "LOOPS",
   "FUNCTIONS",
-  "DEBUGGING"
+  "DEBUGGING",
 ]);
 
 module.exports = learnyoubash;

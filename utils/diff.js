@@ -1,7 +1,9 @@
+'use strict';
+
 require('colors');
 const diff = require('diff');
 
-module.exports = function (attempt, solution) {
+module.exports = (attempt, solution) => {
   // Compare solution and attempt results
   const parts = diff.diffLines(attempt, solution);
   // return diff
