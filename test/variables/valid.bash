@@ -1,1 +1,3 @@
-./exercises/variables/solution/solution.bash
+#!/usr/bin/env bash
+
+echo "User $USER in directory $PWD."

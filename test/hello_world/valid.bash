@@ -1,1 +1,3 @@
-./exercises/hello_world/solution/solution.bash
+#!/usr/bin/env bash
+
+echo "Hello, world!"
