@@ -16,7 +16,7 @@ This workshopper is based on **bash-handbook**, so if you want to more examples,
 This workshopper requires **Bash** environment. Use [Cygwin](cygwin) if you are Windows user. Also if you are on Windows, make sure you are using at least 5.1.0 version of Node.js, which provides a fix for a bug on Windows where you can't choose items in the menu.
 
 * [**Node.js**](node-url) >=6.0.0
-* **Bash** (use [Cygwin](cygwin) if you are on Windows)
+* **Bash** (use [Cygwin][cygwin] if you are on Windows)
 
 ## Installation
 
