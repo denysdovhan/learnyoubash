@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "eslint . && workshopper-adventure-test",
-    "postpublish": "git push --follow-tags"
+    "postpublish": "git push --follow-tags",
+    "build": "pkg . --out-dir=build"
   },
   "repository": {
     "type": "git",
