@@ -39,6 +39,21 @@
     "eslint": "^3.16.1",
     "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-import": "^2.2.0",
+    "pkg": "^4.2.5",
     "workshopper-adventure-test": "^1.1.1"
+  },
+  "pkg": {
+    "scripts": [
+      "exercises/**/*.js",
+      "i18n/**/*.{js,json}",
+      "utils/**/*.js",
+      "node_modules/workshopper-adventure/{default,lib,i18n}/**/*.{js,json}"
+    ],
+    "assets": [
+      "exercises/**/*.*.md",
+      "exercises/**/solution/*.bash",
+      "i18n/**/*.md",
+      "node_modules/workshopper-adventure/i18n/{footer,usage}/*.md"
+    ]
   }
 }
