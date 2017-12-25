@@ -58,7 +58,7 @@ module.exports = (dirname, getArgs) => {
       args = args.concat(getArgs());
     }
 
-    return execute([filename, ...args], true)
+    execute([filename, ...args], true)
       .then(() => done())
       .catch(reason => done(reason, false));
   };
