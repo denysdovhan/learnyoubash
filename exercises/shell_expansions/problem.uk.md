@@ -65,11 +65,6 @@ project-<RESULT>
 
 Результат:
 
-    project-11/src/index.js
-    project-11/src/util.js
-    project-11/dest/index.js
-    project-11/dest/util.js
-    project-11/test/index.js
-    project-11/test/util.js
+    project-11/src/index.js project-11/src/util.js project-11/dest/index.js project-11/dest/util.js project-11/test/index.js project-11/test/util.js
 
 ---
