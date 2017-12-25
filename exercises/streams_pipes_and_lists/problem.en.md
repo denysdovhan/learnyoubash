@@ -4,7 +4,7 @@ This exercise is very important because streams, pipes, and lists of commands ar
 
 ### Streams
 
-Bash receives input and sends output as sequences or **streams** of characters.  These streams may be redirected into files or vice versa.
+Bash receives input and sends output as sequences or **streams** of characters. These streams may be redirected into files or vice versa.
 
 There are three descriptors:
 
