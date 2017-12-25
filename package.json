@@ -1,7 +1,7 @@
 {
   "preferGlobal": true,
   "name": "learnyoubash",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "Learn you how to write your first bash script",
   "bin": {
     "learnyoubash": "./bin/learnyoubash"
