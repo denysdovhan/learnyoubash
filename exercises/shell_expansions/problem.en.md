@@ -65,11 +65,6 @@ Do not create any folders! Just output the result using `echo`. For example:
 
 The result must looks like this:
 
-    project-11/src/index.js
-    project-11/src/util.js
-    project-11/dest/index.js
-    project-11/dest/util.js
-    project-11/test/index.js
-    project-11/test/util.js
+    project-11/src/index.js project-11/src/util.js project-11/dest/index.js project-11/dest/util.js project-11/test/index.js project-11/test/util.js
 
 ---
