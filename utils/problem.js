@@ -51,14 +51,14 @@ module.exports = (dirname, getArgs) => {
       .catch(reason => done(reason, false));
   };
 
-  exports.run = function run(args, done) {
+  exports.run = function run([filename, args = []], done) {
     // Get argumetns which will be passed into script
     if (getArgs) {
       // eslint-disable-next-line
-      args = args.push(getArgs());
+      args = args.concat(getArgs());
     }
 
-    return execute(args, true)
+    return execute([filename, ...args], true)
       .then(() => done())
       .catch(reason => done(reason, false));
   };
