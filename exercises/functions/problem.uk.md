@@ -49,7 +49,7 @@ local local_var="Я локальна змінна"
 
 Приклад:
 
-    ./loops.bash 10 17
+    ./functions.bash 10 17
 
 Результат:
 
