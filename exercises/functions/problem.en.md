@@ -51,7 +51,7 @@ In other words, you should build a tree of even numbers. On the top of the tree 
 
 Example:
 
-    ./loops.bash 10 17
+    ./functions.bash 10 17
 
 Output:
 
